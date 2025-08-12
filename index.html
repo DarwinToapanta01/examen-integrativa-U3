@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PWA Boilerplate</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="theme-color" content="#3f51b5" />
+</head>
+
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-color--grey-100">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title"><i class="material-icons" style="vertical-align:middle;">school</i> ESPE PWA</span>
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a class="mdl-navigation__link" href=""><i class="material-icons" style="vertical-align:middle;">home</i> Inicio</a>
+          <a class="mdl-navigation__link" href=""><i class="material-icons" style="vertical-align:middle;">info</i> Acerca de</a>
+          <a class="mdl-navigation__link" href=""><i class="material-icons" style="vertical-align:middle;">school</i> Oferta académica</a>
+          <a class="mdl-navigation__link" href=""><i class="material-icons" style="vertical-align:middle;">assignment</i> Proceso de admisión</a>
+          <a class="mdl-navigation__link" href=""><i class="material-icons" style="vertical-align:middle;">contact_mail</i> Contactos</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title"><i class="material-icons" style="vertical-align:middle;">school</i> ESPE</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href=""><i class="material-icons" style="vertical-align:middle;">home</i> Inicio</a>
+        <a class="mdl-navigation__link" href=""><i class="material-icons" style="vertical-align:middle;">info</i> Acerca de</a>
+        <a class="mdl-navigation__link" href=""><i class="material-icons" style="vertical-align:middle;">school</i> Oferta académica</a>
+        <a class="mdl-navigation__link" href=""><i class="material-icons" style="vertical-align:middle;">assignment</i> Proceso de admisión</a>
+        <a class="mdl-navigation__link" href=""><i class="material-icons" style="vertical-align:middle;">contact_mail</i> Contactos</a>
+      </nav>
+    </div>
+
+    <main class="mdl-layout__content">
+  <div class="page-content mdl-grid">
+        <!-- Sección: Inicio -->
+        <section id="inicio" class="mdl-grid">
+          <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
+            <div class="mdl-card mdl-shadow--4dp mdl-color--white" style="width: 100%">
+              <div class="mdl-card__title mdl-color--indigo-500">
+                <h2 class="mdl-card__title-text" style="color:white;">¡Bienvenido a la Universidad de las Fuerzas Armadas ESPE!</h2>
+              </div>
+              <div class="mdl-card__supporting-text" style="text-align:center;">
+                <img src="assets/icons/espe.png" alt="Universidad ESPE" style="width:100%; max-width:600px; height:auto; margin-bottom:24px; border-radius:18px; box-shadow:0 4px 16px rgba(0,0,0,0.18); display:block; margin-left:auto; margin-right:auto;">
+                <br>
+                Explora la información sobre nuestra universidad, carreras, proceso de admisión y más.
+              </div>
+              <div class="mdl-card__actions mdl-card--border" style="text-align:right;">
+                <button class="mdl-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="install-btn" style="display:none;">
+                  <i class="material-icons">get_app</i> Instalar PWA
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección: Acerca de -->
+        <section id="acerca" class="mdl-grid" style="display:none;">
+          <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
+            <div class="mdl-card mdl-shadow--4dp mdl-color--white" style="width: 100%">
+              <div class="mdl-card__title mdl-color--indigo-500">
+                <h2 class="mdl-card__title-text" style="color:white;">Sobre la ESPE</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <ul class="mdl-list">
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <strong>Historia:</strong><br>
+                      <span style="font-size:1.1em;">«La Dirección de Posgrados, nace como una unidad dependiente del Vicerrectorado de Investigaciones y Desarrollo de la ESPE, inició sus actividades el 16 de junio de 1994 y se constituyó legalmente, de acuerdo con los nuevos estatutos de la institución, el 27 de julio de 1994. Su funcionamiento se legalizó mediante Orden de Rectorado 94141-ESPE-b el 21 de diciembre de 1994.»</span>
+                    </span>
+                  </li>
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <strong>Misión:</strong><br>
+                      <span style="font-size:1.1em;">«Formar académicos, profesionales e investigadores de excelencia, creativos, humanistas, con capacidad de liderazgo, pensamiento crítico y alta conciencia ciudadana; generar, aplicar y transferir el conocimiento; y, proporcionar e implementar alternativas de solución a los problemas del país acordes con el Plan Nacional de Desarrollo”.</span>
+                    </span>
+                  </li>
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <strong>Visión:</strong><br>
+                      <span style="font-size:1.1em;">«Ser una universidad líder en la gestión del conocimiento y tecnología en el sistema de educación superior del país, con prestigio internacional y referente de práctica de valores éticos, cívicos y de servicio a la sociedad»</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--Oferta académica -->
+        <section id="oferta" class="mdl-grid" style="display:none;">
+          <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
+            <div class="mdl-card mdl-shadow--4dp mdl-color--white" style="width: 100%">
+              <div class="mdl-card__title mdl-color--indigo-500">
+                <h2 class="mdl-card__title-text" style="color:white;">Oferta Académica</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <ul class="mdl-list">
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <strong>Carrera de Tecnologías de la Información</strong><br>
+                      Modalidad: Presencial<br>
+                      Duración: 8 Semestres<br>
+                      Resolución CES: RPC-SE-09-No.086-2020.<br>
+                    </span>
+                  </li>
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <strong>Campus: Matriz Sangolquí</strong><br>
+                      Fidel L. Castro de la Cruz Mgtr.<br>
+                      Director de Carrera<br>
+                      <a href="mailto:flcastro@espe.edu.ec">flcastro@espe.edu.ec</a>
+                    </span>
+                  </li>
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <strong>Campus: Santo Domingo T.</strong><br>
+                      Christian A. Coronel G. Mgtr.<br>
+                      Director de Carrera<br>
+                      <a href="mailto:cacoronel@espe.edu.ec">cacoronel@espe.edu.ec</a>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--Proceso de admisión -->
+        <section id="admision" class="mdl-grid" style="display:none;">
+          <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
+            <div class="mdl-card mdl-shadow--4dp mdl-color--white" style="width: 100%">
+              <div class="mdl-card__title mdl-color--indigo-500">
+                <h2 class="mdl-card__title-text" style="color:white;">Proceso de Admisión</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <ul class="mdl-list">
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      Sólo se podrán postular:<br>
+                      a) Las personas que consten en la base del registro nacional de SENESCYT
+                    </span>
+                  </li>
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <strong>Proceso de Postulación en la Universidad de las Fuerzas Armadas ESPE para el Segundo Periodo Académico 2025 (SII-2025):</strong>
+                      <ol style="margin-top:0.5em;">
+                        <li>Registrarse: Actividad necesaria para generar usuario y contraseña para el Módulo de Admisiones</li>
+                        <li>Activar cuenta: Aceptar la notificación recibida al correo electrónico y generar la contraseña para usar el Módulo de Admisiones.</li>
+                        <li>Inicio de Sesión: Acceder con el número de cédula / pasaporte y contraseña.</li>
+                        <li>Inscripción: Seleccionar un grupo de carreras al cuál desea inscribirse para rendir la evaluación de ingreso.</li>
+                      </ol>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--Contactos -->
+        <section id="contactos" class="mdl-grid" style="display:none;">
+          <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
+            <div class="mdl-card mdl-shadow--4dp mdl-color--white" style="width: 100%">
+              <div class="mdl-card__title mdl-color--indigo-500">
+                <h2 class="mdl-card__title-text" style="color:white;">Contacto</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <ul class="mdl-list">
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <strong>Contacto:</strong> Dra. María Fernanda Pillajo
+                    </span>
+                  </li>
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <strong>E-mail:</strong> <a href="mailto:mfpillajo@espe.edu.ec">mfpillajo@espe.edu.ec</a>
+                    </span>
+                  </li>
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <strong>Teléfono:</strong> (+593) 23989.400 Ext. 1526
+                    </span>
+                  </li>
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <strong>Ubicación:</strong> Edificio Central, Planta Baja, Unidad de Registro
+                    </span>
+                  </li>
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <strong>Horario:</strong> Lunes a Viernes de 7am a 4pm
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <!-- Material Design Lite -->
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+  <!-- Librería de Web Components externa -->
+  <!-- <script src="components/nombre-libreria.js"></script> -->
+
+  <!-- Custom JavaScript -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
