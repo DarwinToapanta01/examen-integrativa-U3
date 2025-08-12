@@ -98,5 +98,5 @@ Darwin Toapanta
 ---
 🔗 **GitHub:** [Repositorio](https://github.com/DarwinToapanta01/examen-integrativa-U3.git)
 
-🔗 **GitHub Pages:** [GitHub Pages](https://darwintoapanta01.github.io/examen-integrativa-U3/)
+📱 **GitHub Pages:** [GitHub Pages](https://darwintoapanta01.github.io/examen-integrativa-U3/)
 ---
