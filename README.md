@@ -1,3 +1,36 @@
+# Desglose de Fases y Cumplimiento
+
+## Fase 1: Configuración del Entorno y Planificación
+
+- **Creación del Repositorio:**
+	- El repositorio fue creado en GitHub: [examen-integrativa-U3](https://github.com/DarwinToapanta01/examen-integrativa-U3.git)
+- **Estructura de Archivos:**
+	- Se definió una estructura lógica con carpetas `css/`, `js/`, `assets/icons/` y archivos principales (`index.html`, `manifest.json`, `sw.js`, `package.json`).
+- **Selección de Componentes:**
+	- Inicialmente se consideró usar una librería de Web Components externa, pero se optó por Material Design Lite (MDL) para cumplir con los requisitos visuales y de interfaz.
+- **Configuración Inicial:**
+	- El archivo `index.html` enlaza correctamente los archivos CSS y JS, y se importan los recursos de MDL desde CDN.
+
+## Fase 2: Desarrollo de la Interfaz y Contenido
+
+- **Construcción de la UI:**
+	- Todas las secciones (Inicio, Sobre la ESPE, Oferta Académica, Proceso de Admisión, Contacto) fueron implementadas usando componentes de Material Design Lite (cards, navbar, listas, botones).
+- **Poblar Contenido:**
+	- El contenido informativo de cada sección se agregó en el archivo `index.html`, asegurando legibilidad y presentación profesional.
+- **Navegación:**
+	- La navegación entre secciones se implementó en `js/app.js` usando el menú/header de MDL, permitiendo cambiar de sección sin recargar la página.
+
+## Fase 3: Implementación de Funcionalidades PWA
+
+- **Web App Manifest (`manifest.json`):**
+	- El archivo contiene `name`, `short_name`, `start_url`, `display: 'standalone'`, `background_color`, `theme_color` y los iconos necesarios. Está enlazado en `index.html`.
+- **Service Worker (`sw.js`):**
+	- El archivo define el evento `install` para cachear todos los recursos críticos (HTML, CSS, JS, imágenes, iconos).
+	- El evento `fetch` implementa la estrategia "Cache First" para servir la app offline.
+- **Registro del Service Worker:**
+	- El registro se realiza desde `js/app.js` al cargar la aplicación.
+
+Cada uno de estos pasos está documentado y reflejado en los archivos fuente del proyecto, cumpliendo con los objetivos de la evaluación.
 
 # ESPE PWA: Portal Informativo
 
